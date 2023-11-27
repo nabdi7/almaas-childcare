@@ -1,29 +1,56 @@
 import React from 'react';
-
-// background image
-
+import './Home.css';
 
 
-// about the daycare
+const Home = () => { 
+    return (
+        <>
+        {/* background image */}
+        <div className='background-image'>
+            
+        </div>
 
 
+        {/* about the daycare  */}
+        <section className='about'>
 
 
-// gallary 
-
-
-
-
-// programs
-
-
-
-// testimonials
+        </section>
 
 
 
-// contact us
+        {/* gallary  */}
+        <section className='gallery'>
 
 
+        </section>
 
-// footer
+
+        {/* programs  */}
+        <section className='programs'>
+
+
+        </section>
+
+
+        {/* testimonials */}
+        <section className='testimonials'>
+
+
+        </section>
+
+
+        {/* contact us  */}
+        <section className='contact'>
+
+
+        </section>
+
+
+      
+    </>
+    );
+   
+}
+
+export default Home;
