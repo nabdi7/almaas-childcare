@@ -1,10 +1,120 @@
-/* background image */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+      overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+}
+  
+/* background image */
+.background-image{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 35px;
+    margin-bottom: 1rem;
+    color: white;
+    font-style: italic;
+}
+
+.title-sub {
+    font-size: 80px;
+    margin-bottom: 1rem;
+}
 
 
 /* about the daycare */
+.about {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.about>.left {
+    width: 56%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about .about-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: blue;
+    line-height: 0.95;
+    margin-bottom: 5px;
+}
+
+.about h2 {
+    margin: 15px 0;
+}
+
+.about h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #46494d;
+    margin-bottom: 15px;
+}
+
+.about p {
+    margin: 10px 0;
+}
+
+.about h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #46494d;
+    margin-bottom: 15px;
+}
+
+.about ul, .bodycontent ol {
+    padding-left: 20px;
+}
 
 
+.about ul>li, .bodycontent ol>li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.about a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* right side */
+.about>.right {
+    width: 44%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.right img {
+    max-width: 100%;
+    width: auto;
+}
 
 
 /* gallary  */
@@ -12,8 +122,93 @@
 
 
 /* programs */
+.programBox {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    background-color: var(--blue);
+    background-image: url(../images/program-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
 
+.programs {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.programBox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.programBox .programs-container {
+    max-width: 830px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.programs-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.programBox .programs-container .program {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 2rem;
+    display: block;
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.programBox .program .program-image {
+    max-height: 180px;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.programBox .program .program-image>img {
+    transition: all 350ms ease-in-out;
+    object-fit: cover;
+    width: 100%;
+}
+
+.programBox .program .program-type {
+    background-color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 350ms ease-in-out;
+}
+
+.program .program-type h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.program .program-type .ageRange {
+    color: #339fd3;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.8;
+}
 
 /* testimonials */
 
