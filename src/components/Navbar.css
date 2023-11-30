@@ -23,14 +23,12 @@ body {
 
 .container {
     display: flex;
-    /* justify-content: space-between;  */
     align-items: center;
     justify-content: center;
 }
 
 .navbar-links-left {
     list-style: none;
-    /* display: flex; */
     padding: 0;
     margin: 0;
 }
@@ -63,37 +61,47 @@ body {
 .navbar-links-right li:hover {
     color: green;
 }
-
+.active:hover {
+    background-color: green;
+   
+}
 @media screen and (max-width: 768px) {
     .navbar {
         background-color: #fff;
-        padding: 2rem 1rem;
+        padding: 2rem 0.5rem;
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #eee;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
       }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
-      .navbar-logo {
+    .navbar-logo {
         display: flex; 
         justify-content: center; 
         align-items: center; 
-      }
+    }
     
-      .navbar-logo img {
+    .navbar-logo img {
         max-width: 100%; 
-      }
+    }
     
-      .navbar-links-left li,
-      .navbar-links-right li {
+    .navbar-links-left li,
+    .navbar-links-right li {
         margin: 5 0.5rem; 
         font-size: 13px;
-      }
-      
-      .active {
+    }
+    .navbar-links-right li a.active {
+        color: black;
+    }
+    .active {
         background-color: greenyellow;
         color: black;
         border-radius: 1011.188px;
-        padding: 0.8rem 0.5rem;
+        padding: 0.8rem 0.6rem;
     }
 }
