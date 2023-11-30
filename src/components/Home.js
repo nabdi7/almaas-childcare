@@ -43,33 +43,34 @@ const Home = () => {
             <div class="rightSide">
                 <h2>Welcome to Almaas Family Childcare</h2>
                 
-                <p>We offer a high-quality learning center located in Rockwall, 
-                    Texas - a truly new, innovative and affordable concept in 
-                    childcare and preschool education. Our full-time childcare 
-                    center offers the finest facilities available for children 
-                    ages 6 weeks to school-aged. Our preschool program is designed 
-                    for 3 to 5 year olds to prepare them for their all-important 
-                    school years ahead. We offer an extensive school-age program 
-                    for before and after school for ages 5 to 12 years old with 
-                    age appropriate S.T.E.A.M. MakerSpace activities.
+                <p>We offer a high-quality learning center located in Covington, 
+                    WA - a truly new, innovative and affordable concept in 
+                    childcare. Our full-time childcare offers the finest facilities available for children 
+                    ages new born to school-aged. Almaas Family Childcare 
+                    provides a high-quality and professional caregiver's home. 
+                    It's our aim to provide fun and caring. Let us know what 
+                    you need for your child because you won't find better 
+                    daycare in King County. Contact us at <b> (206)934-9581 </b> 
+                    for more information
                 </p>
 
                 <br/>
                 <br/>
                 <h3>Highlights/Quick Facts:</h3> 
                 <ul className='bodycontent'>
-                    <li> Year-round, full time preschool program for ages 18 months-5 years</li>
-                    <li>Before &amp; after care and summer camp for grades K-6</li>
-                    <li>Open Monday-Friday, 5 AM-9 PM</li>
                     <li>Developmentally appropriate play-based curriculum</li>
                     <li>Qualified, caring &amp; experienced Staff</li>
+                    <li> Year-round, full time program</li>
+                    <li>Open Everyday, 5 AM-9 PM</li>
+                    <li>Before &amp; after school care </li>
                     <li>Nutritious meals &amp; snacks </li>
-                    <li>Located two blocks from the Takoma Metro/Downtown Takoma Park</li>
                 </ul>
 
                 <br/>
                 <br/>
-                <p>Please feel free to contact us at <b> (206)934-9581 </b> to setup a time when you can come tour our facility and meet our staff. We look forward to meeting you and your children. </p>
+                <p>Please feel free to contact us at <b> (206)934-9581 </b> to setup a 
+                time when you can come tour our facility and meet. We look 
+                forward to meeting you and your children. </p>
                 
                 <br />
             </div>	
@@ -94,7 +95,8 @@ const Home = () => {
                     <div className='program-type'>
                         <h3>Infant Program</h3>
                         <p class="ageRange">18 mo to 2 years</p>
-                        <p>Our toddler program is designed for children 18 months to 2 years old.</p>
+                        <p>Our infant program provides a nurturing environment for children aged 18 months to 2 years, fostering early development and exploration.</p>
+
                     </div>
                 </a>
 
@@ -105,7 +107,7 @@ const Home = () => {
                     <div className='program-type'>
                         <h3>Preschool</h3>
                         <p class="ageRange">2 to 5 years</p>
-                        <p>Our toddler program is designed for children 18 months to 2 years old.</p>
+                        <p>Our preschool program focuses on foundational skills and social interaction for children aged 2 to 5 years, preparing them for a smooth transition to formal education.</p>
                     </div>
                 </a>
 
@@ -116,7 +118,7 @@ const Home = () => {
                     <div className='program-type'>
                         <h3>School Age</h3>
                         <p class="ageRange">5 to 12 years</p>
-                        <p>Our toddler program is designed for children 18 months to 2 years old.</p>
+                        <p>Our school-age program offers a stimulating environment for children aged 5 to 12 years, combining education and recreation to support their ongoing development.</p>
                     </div>
                 </a>
 
@@ -127,7 +129,7 @@ const Home = () => {
                     <div className='program-type'>
                         <h3>Other Programs</h3>
                         <p class="ageRange">5 to 12 years</p>
-                        <p>Our toddler program is designed for children 18 months to 2 years old.</p>
+                        <p>Explore our diverse range of programs tailored to different age groups and interests, ensuring a holistic and enriching experience for all participants.</p>
                     </div>
                 </a>
             </div>

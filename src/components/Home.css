@@ -93,6 +93,10 @@ img {
     text-decoration: underline;
 }
 
+.gallery-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 /* programs */
 .programBox {
@@ -301,6 +305,15 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Background image */
+    .background-image {
+        padding-top: 2rem; 
+    }
+
     /* about the daycare  */
     .aboutSection {
         display: flex;
@@ -348,6 +361,12 @@ button:hover {
         padding-top: 10px;
     }
 
+    /* programs  */
+    .programBox .programs-container .program {
+        width: 100%; 
+    }
+
+
     /* contact us  */
     .contactSection {
         display: flex;
@@ -360,9 +379,8 @@ button:hover {
         float: none;
     }
 
-   
     .contactSection .rightCBlock .desc {
-        width: 450px;
+        width: 350px;
         position: relative;
         margin: 80px auto;
         padding: 35px 45px;
@@ -373,5 +391,78 @@ button:hover {
         width: 100%;
     }
     
+
+}
+
+/* ipad air, pro,  surface pro, next hub*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Programs section */
+    .programBox .programs-container .program {
+        width: 50%; 
+    }
+
+    .programBox .program .program-type h3 {
+        font-size: 20px; 
+        padding-top: 15px; 
+    }
+
+    .programBox .program .program-type .ageRange {
+        margin-bottom: 8px;
+    }
+
+    /* About section */
+    .aboutSection {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .aboutSection .leftSide,
+    .aboutSection .rightSide {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; 
+    }
+
+    .aboutSection .leftSide img {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .aboutSection .rightSide {
+        padding: 0;
+    }
+
+    .aboutSection .rightSide h2 {
+        font-size: 26px;
+    }
+
+    .aboutSection .rightSide p {
+        font-size: 18px; 
+    }
+
+    .aboutSection .rightSide h3 {
+        font-size: 22px; 
+    }
+
+    .aboutSection ul,
+    .bodycontent ol {
+        padding-left: 0; 
+    }
+
+    .aboutSection ul>li,
+    .bodycontent ol>li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    /* Contact section */
+    .contactSection .rightCBlock .desc {
+        width: 400px; 
+    }
+    form {
+        width: 100%;
+    }
 
 }
