@@ -74,23 +74,27 @@ img {
 }
 .aboutSection .rightSide h3 {
     font-size: 28px;
-    font-weight: 500;
-    color: #46494d;
+    font-weight: 700;
+    color: #000;
     margin-bottom: 15px;
 }
-.aboutSection ul, .bodycontent ol {
-    padding-left: 20px;
+.aboutSection ul {
+    padding-left: 20px; 
+    list-style-type: none; 
 }
 
-.aboutSection ul>li, .bodycontent ol>li {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    /* text-align: left; */
+.aboutSection ul>li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center; 
 }
 
-.aboutSection a {
-    color: blue;
-    text-decoration: underline;
+.aboutSection ul>li::before {
+    content: '\2022';
+    color: black;
+    font-size: 16px; 
+    margin-right: 8px; 
+    vertical-align: middle;
 }
 
 .gallery-title {
@@ -202,7 +206,7 @@ p {
     width: 50%;
     position: relative;
     float: left;
-    background: #d6a844 url(../images/contact.png) center top no-repeat;
+    background: burlywood url(../images/contact.png) center top no-repeat;
     background-size: contain;
     padding: 50px;
     text-align: center;
@@ -315,6 +319,21 @@ button:hover {
         background-attachment: scroll;
     }
 
+    .title {
+        font-size: 23px;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        letter-spacing: -.9px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .title-sub {
+        font-size: 5rem;
+        line-height: 1.1;
+        letter-spacing: -5px;
+        margin-bottom: 1rem;
+    }
     /* about the daycare  */
     .aboutSection {
         display: flex;

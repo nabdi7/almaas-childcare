@@ -33,14 +33,11 @@ body {
     margin: 0;
 }
 
-.navbar-links-left li {
-    display: inline;
-    padding: 0 1rem;
-}
-
+.navbar-links-left li,
 .navbar-links-right li {
     display: inline;
     padding: 0 1rem;
+    cursor: pointer; 
 }
 .navbar-links-right a {
     color: #000;
@@ -48,7 +45,7 @@ body {
 }
 
 .navbar-links-right li a.active {
-    color: white;
+    color: black;
 }
 
 .active {
@@ -63,8 +60,8 @@ body {
 }
 .active:hover {
     background-color: green;
-   
 }
+
 @media screen and (max-width: 768px) {
     .navbar {
         background-color: #fff;

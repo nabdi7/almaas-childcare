@@ -29,9 +29,8 @@ const Home = () => {
         {/* background image */}
         <div className='background-image'>
             <div className='title-container'>
-                <h1 className='title'>Welcome to Almaas Family Home Childcare</h1>
-                <h1 className='title-sub'>Caring for the future </h1>
-                {/* <button className='learn-more'>Learn More</button> */}
+                <h1 className='title'>Almaas Family Home Childcare</h1>
+                <h1 className='title-sub'>A beautiful place to grow. </h1>
             </div>
         </div>
 
@@ -51,16 +50,14 @@ const Home = () => {
                         childcare. Our full-time childcare offers the finest facilities available for children 
                         ages new born to school-aged. Almaas Family Childcare 
                         provides a high-quality and professional caregiver's home. 
-                        It's our aim to provide fun and caring. Let us know what 
-                        you need for your child because you won't find better 
-                        daycare in King County. Contact us at <b> (206)934-9581 </b> 
+                        It's our aim to provide fun and caring. <br/> Contact us at <b> (206)934-9581 </b> 
                         for more information
                     </p>
 
                     <br/>
                     <br/>
                     <h3>Highlights/Quick Facts:</h3> 
-                    <ul className='bodycontent'>
+                    <ul>
                         <li>Developmentally appropriate play-based curriculum</li>
                         <li>Qualified, caring &amp; experienced Staff</li>
                         <li> Year-round, full time program</li>
@@ -94,7 +91,7 @@ const Home = () => {
             <section className='programs programBox'>
                 <h2> Our Programs</h2>
                 <div className='programs-container'>
-                    <a href='#' className='program' previewlistener="true">
+                    <div  className='program' previewlistener="true">
                         <div className='program-image'>
                             <img src={toddler} alt='program' />
                         </div>
@@ -104,9 +101,9 @@ const Home = () => {
                             <p>Our infant program provides a nurturing environment for children aged 18 months to 2 years, fostering early development and exploration.</p>
 
                         </div>
-                    </a>
+                    </div >
 
-                    <a href='#' className='program' previewlistener="true">
+                    <div className='program' previewlistener="true">
                         <div className='program-image'>
                             <img src={[preschool]} alt='program' />
                         </div>
@@ -115,9 +112,9 @@ const Home = () => {
                             <p class="ageRange">2 to 5 years</p>
                             <p>Our preschool program focuses on foundational skills and social interaction for children aged 2 to 5 years, preparing them for a smooth transition to formal education.</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href='#' className='program' previewlistener="true">
+                    <div className='program' previewlistener="true">
                         <div className='program-image'>
                             <img src={schoolAge} alt='program' />
                         </div>
@@ -126,9 +123,9 @@ const Home = () => {
                             <p class="ageRange">5 to 12 years</p>
                             <p>Our school-age program offers a stimulating environment for children aged 5 to 12 years, combining education and recreation to support their ongoing development.</p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href='#' className='program' previewlistener="true">
+                    <div className='program' previewlistener="true">
                         <div className='program-image'>
                             <img src={image1} alt='program' />
                         </div>
@@ -137,7 +134,7 @@ const Home = () => {
                             <p class="ageRange">5 to 12 years</p>
                             <p>Explore our diverse range of programs tailored to different age groups and interests, ensuring a holistic and enriching experience for all participants.</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
             </section>

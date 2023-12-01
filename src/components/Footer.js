@@ -7,8 +7,16 @@ const Footer = () => {
         <>
         <footer className='footer'>
             <div className='logo-div'>
-                <img src={logo} width='200px' height='auto' max-width='100%' max-height='100%' alt='Logo' />
-            </div>
+            <a href='/'> 
+            <img
+              src={logo}
+              width='200px'
+              height='auto'
+              max-width='100%'
+              max-height='100%'
+              alt='Logo'
+            />
+          </a>            </div>
 
             <div className='footer-container'>
                 {/* <h1 className='footer-title'> Almaas Family Home Childcare</h1> */}
