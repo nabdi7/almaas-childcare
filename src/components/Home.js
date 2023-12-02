@@ -8,7 +8,7 @@ import image3 from '../images/image3.jpeg';
 import image4 from '../images/kid4.jpeg';
 import image5 from '../images/kid6.jpeg';
 import image6 from '../images/kid5.jpeg';
-import aboutImage from '../images/aboutImg1.jpeg';
+import aboutImage from '../images/paint.jpg';
 import toddler from '../images/toddler.jpg';
 import preschool from '../images/preshool.jpg';
 import schoolAge from '../images/school.jpg';
