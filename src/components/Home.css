@@ -261,6 +261,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 15px;
@@ -307,7 +308,11 @@ button {
 button:hover {
     background-color: green;
 }
-
+.thank-you-message {
+    margin-top: 1rem;
+    color: greenyellow; 
+    font-size: 15px;
+}
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;

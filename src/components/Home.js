@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, Element } from 'react-scroll';
 import './Home.css';
 import Gallery from './Gallery';
+import emailjs from 'emailjs-com'; 
 import image1 from '../images/image1.jpeg';
 import image2 from '../images/image2.jpeg';
 import image3 from '../images/image4.jpg';
@@ -15,6 +16,14 @@ import schoolAge from '../images/school.jpg';
 
 
 const Home = () => { 
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [contactMessage, setContactMessage] = useState("");
+    const [user_name, setName] = useState(""); 
+    const [user_email, setEmail] = useState(""); 
+    const [user_phone, setPhone] = useState(""); 
+    const [message, setMessage] = useState("");
+    const formRef = useRef();
+
     const galleryImages = [
         { img: image1 },
         { img: image2 },
@@ -23,7 +32,34 @@ const Home = () => {
         { img: image5 },
         { img: image6 },
     ]
-    // const navigate = useNavigate();
+    
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+    emailjs
+      .sendForm("service_j3nyl4v", "template_if9y1uc", formRef.current, "Su2Fj91t8uKmDnkig")
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result);
+          setFormSubmitted(true);
+          setContactMessage("We got your message. Thanks!");
+          setTimeout(() => {
+            setContactMessage("");
+            setName("");
+            setPhone("");
+            setEmail("");
+            setMessage("");
+            setFormSubmitted(false);
+          }, 2000);
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+
+        }
+      );
+    };
+    
     return (
         <>
         {/* background image */}
@@ -167,17 +203,53 @@ const Home = () => {
                 <div class="rightCBlock">
                     <div class="desc"> 
                         <h1>Get In Touch</h1>
-                        <form>
+                        <form ref={formRef} onSubmit={sendEmail}>
                             <div>
-                                <input type="text" id="name" name="name" placeholder="Name" />
+                                <input
+                                    type='text'
+                                    placeholder='Name'
+                                    name='user_name' 
+                                    value={user_name} 
+                                    onChange={(e) => setName(e.target.value)}
+                                    required
+                                />
                             </div>
                             <div>
-                                <input type="email" id="email" name="email" placeholder="Email" />
+                                <input
+                                    type='tel'
+                                    placeholder='Phone'
+                                    name='user_phone' 
+                                    value={user_phone} 
+                                    onChange={(e) => setPhone(e.target.value)}
+                                    required
+                                />
                             </div>
                             <div>
-                                <textarea id="message" name="message" placeholder="Message"></textarea>
+                                <input
+                                    type='email'
+                                    placeholder='Email'
+                                    name='user_email' 
+                                    value={user_email} 
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div>
+                            <textarea
+                                placeholder='Message'
+                                id="message"
+                                name="message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                required
+                            ></textarea>
                             </div>
                             <button className='submit'>Send</button>
+                            {formSubmitted && (
+                            <h6 className='thank-you-message'>
+                                Successful! We'll reach out shortly. Thanks!
+                            </h6>
+                            )}
                         </form>
                     </div>
                 </div>
