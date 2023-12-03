@@ -208,7 +208,7 @@ p {
     float: left;
     background: burlywood url(../images/contact.png) center top no-repeat;
     background-size: contain;
-    padding: 50px;
+    padding: 80px;
     text-align: center;
 }
 .contactSection h1 {
