@@ -104,7 +104,7 @@ const Home = () => {
 
                     <br/>
                     <br/>
-                    <p>Please feel free to contact us at <b> (206)934-9581 </b> to setup a 
+                    <p>Please feel free to contact us at <a href='tel:+12068833462'><b>(206)934-9581</b></a> to setup a 
                     time when you can come tour our facility and meet. We look 
                     forward to meeting you and your children. </p>
                     
