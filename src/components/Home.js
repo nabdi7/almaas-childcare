@@ -86,8 +86,8 @@ const Home = () => {
                         childcare. Our full-time childcare offers the finest facilities available for children 
                         ages new born to school-aged. Almaas Family Childcare 
                         provides a high-quality and professional caregiver's home. 
-                        It's our aim to provide fun and caring. <br/> Contact us at <b> (206)934-9581 </b> 
-                        for more information
+                        It's our aim to provide fun and caring. <br/> Contact us at <a href='tel:+12068833462'><b>(206)934-9581</b></a>
+                        &nbsp;for more information
                     </p>
 
                     <br/>
